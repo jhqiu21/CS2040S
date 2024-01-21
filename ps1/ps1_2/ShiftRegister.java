@@ -43,7 +43,7 @@ public class ShiftRegister implements ILFShiftRegister {
     /**
      * setSeed
      * @param seed
-     * Description:
+     * Description: Sets the shift register to the specified initial seed.
      */
     @Override
     public void setSeed(int[] seed) {
@@ -67,8 +67,8 @@ public class ShiftRegister implements ILFShiftRegister {
 
     /**
      * shift
-     * @return
-     * Description:
+     * @return feedback_bit
+     * Description: Executes one shift step and returns the least significant bit
      */
     @Override
     public int shift() {
@@ -90,8 +90,8 @@ public class ShiftRegister implements ILFShiftRegister {
     /**
      * generate
      * @param k
-     * @return
-     * Description:
+     * @return toDecimal(result)
+     * Description: Extracts k bits from the shift register.
      */
     @Override
     public int generate(int k) {
@@ -102,14 +102,13 @@ public class ShiftRegister implements ILFShiftRegister {
         for(int i = k - 1; i >= 0; i--) {
             result[i] = shift();
         }
-
         return toDecimal(result);
     }
 
     /**
      * Returns the integer representation for a binary int array.
      * @param array
-     * @return
+     * @return ans
      */
     private int toDecimal(int[] array) {
         // TODO:
