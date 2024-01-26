@@ -72,7 +72,15 @@
     
 ## Problem 2 Asymptotic Analysis
 
-- $f(x)$
+- $f_1(n)= 7.2 + 34n^3 + 3524$
+
+- $f_2(n) = n^2 \log_{}n + 25n\log_{}^2n$
+
+- $f_3(n) = 2^{4\log_{}n} + 5n^5$
+
+- $f_4(n) = 2^{2n^2 + 4n + 7}$
+
+
 
 ## Problem 3. More Asymptotic Analysis
 
