@@ -1,7 +1,10 @@
-# CS2040S
+# CS2040S Data Structures and Algorithms
 
 AY23/24 Sem 2 CS2040S material
-|Problem Set|Status|
+
+My work staff in CS2040S
+
+|Problem Set|Status| 
 |--|--|
 |1|✅|
 |2|⭕️|
