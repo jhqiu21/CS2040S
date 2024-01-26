@@ -14,14 +14,14 @@ public class OptimizationTest {
 
     @Test
     public void testOptimization2() {
-        int[] dataArray = {67, 65, 43, 42, 23, 17, 9, 100};
+        int[] dataArray = {100, 9, 100};
         assertEquals(100, Optimization.searchMax(dataArray));
     }
 
     @Test
     public void testOptimization3() {
-        int[] dataArray = {4, -100, -80, 15, 20, 25, 30};
-        assertEquals(30, Optimization.searchMax(dataArray));
+        int[] dataArray = {1, 2, 3, 6, 4, 5, 6};
+        assertEquals(6, Optimization.searchMax(dataArray));
     }
 
     @Test

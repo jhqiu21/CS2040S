@@ -21,9 +21,38 @@ public class Optimization {
      */
     public static int searchMax(int[] dataArray) {
         // TODO: Implement this
-        return 0;
+        // Time Complexity: O(logn)
+        int len = dataArray.length;
+        int low = 0;
+        int high = len - 1;
+        int mid = (low + high) / 2;
+        if (dataArray == null || len <= 0) {
+            // given an invalid input
+            return 0;
+        } else if (dataArray[mid] < dataArray[high]) {
+            // if the array decreases first and then increases, the maximal is one of its side value
+            int MAX = Math.max(dataArray[low], dataArray[high]);
+            return MAX;
+        } else {
+            // if the array increases first and then decreases
+            // we use binary search to eliminate the scope
+            if (len == 1) {
+                return dataArray[0];
+            } else {
+                while (low < high) {
+                    mid = (low + high) / 2;
+                    if (dataArray[mid] > dataArray[mid - 1] && dataArray[mid] > dataArray[mid + 1]) {
+                        return dataArray[mid];
+                    } else if (dataArray[mid] > dataArray[mid + 1]) {
+                        high = mid - 1;
+                    } else {
+                        low = mid + 1;
+                    }
+                }
+                return dataArray[low];
+            }
+        }
     }
-
     /**
      * A routine to test the searchMax routine.
      */
