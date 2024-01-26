@@ -68,9 +68,9 @@
 ## Problem 2 Asymptotic Analysis
 
 - $f_1(n)= 7.2 + 34n^3 + 3524 = O(n^3)$
-- $f_2(n) = n^2 \log_{}n + 25n\log_{}^2n$
+- $f_2(n) = n^2 \log_{}n + 25n\log_{}^2n = O(n^2 \log_{}n) $
 - $f_3(n) = 2^{4\log_{}n} + 5n^5 = (2^{\log_{}n})^4 + 5n^5 = n^4 + 5n^5 = O(n^5)$
-- $f_4(n) = 2^{2n^2 + 4n + 7} = 4^{n^2} \times 4^{2n} \times k = O(4^{n^2})$
+- $f_4(n) = 2^{2n^2 + 4n + 7} = 2^{2n^2 + 4n} \times 2^7= O(2^{2n^2 + 4n})$
 
 ## Problem 3 More Asymptotic Analysis
 
@@ -81,22 +81,17 @@ $g(n) = O(\log_{}n)$
 - $h_1(n) = f(n) + g(n) = O(n) + O(\log_{}n) = O(n)$
 - $h_2(n) = f(n) \times g(n) = O(n) \times O(\log_{}n) = O(n\log_{}n)$
 - $h_3(n) = \max (f(n), g(n)) = O(n)$
-- $h_4(n) = f(g(n)) = $
-- $h_5(n) = f(n)^{g(n)}$
+- $h_4(n) = f(g(n)) = O(\log_{}n) $
+- $h_5(n) = f(n)^{g(n)} = O(n^{\log_{}n}) $
 
 ## Problem 4 Application of Binary Search
 
 Given a sorted array of n−1 unique integers in the range [1, n], how would you find the missing element? Discuss possible naive solutions and possibly faster solutions.
 
 ```angular2html
-    
+  
 ```
 
-
-
 ## Problem 5 Another Application of Binary Search
-
-
-
 
 ## Problem 6 Yet Another Application of Binary Search
