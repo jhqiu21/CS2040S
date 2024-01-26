@@ -75,6 +75,7 @@
 ## Problem 3 More Asymptotic Analysis
 
 $ f(n) = O(n)  $
+
 $ g(n) = O(\log_{}n) $
 
 - $h_1(n) = f(n) + g(n) = O(n) + O(\log_{}n) = O(n)$
