@@ -88,10 +88,49 @@ $g(n) = O(\log_{}n)$
 
 Given a sorted array of n−1 unique integers in the range [1, n], how would you find the missing element? Discuss possible naive solutions and possibly faster solutions.
 
-```angular2html
-  
+Note that the array is sorted, we can use binary search to find the element
+
+```java
+    public static int find(int[] arr) {
+        int len = arr.length - 1;
+        int high = arr.length;
+        int low = 1;
+        while (low < high) {
+            int mid = (low + high) / 2;
+            if (arr[mid] > mid + 1) {
+                high = mid;
+            } else {
+                low = mid + 1;
+            }
+        }
+        return low + 1;
+    }
 ```
 
 ## Problem 5 Another Application of Binary Search
 
+$k_{\min} = 1$
+$k_{\max} = \max {\{pile[i]}\}$
+
+Thus, we can conduct a binary search in $[k_{\min}, k_{\max}]$, To make sure $k$ is valid, we need to check if $k$ satisfied
+
+$$
+\sum_{i=1}^{n}{\frac{pile[i]}{k}} \le h
+$$
+
+Hence, Pseudocode
+
+```
+   int low = 1;
+   int high = max(pile[i])
+   binary: 
+      if (mid is valid) {
+         low = mid + 1;
+      } else {
+         high = mid;
+      }
+```
+
 ## Problem 6 Yet Another Application of Binary Search
+
+Given an array of n x and y-coordinates of an n-sided convex polygon in clockwiseorder, find a bounding box a round the polygon. Discuss possible naive solutions and possibly faster solutions. A convex polygon is a polygon where all interior angles are less than 180 degrees.
