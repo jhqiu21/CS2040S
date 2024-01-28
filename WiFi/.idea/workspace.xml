@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="94b318f6-ed81-4565-a7c4-afe06a6c0a51" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="94b318f6-ed81-4565-a7c4-afe06a6c0a51" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../GuessTheNumber/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuessTheNumber/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GuessTheNumber/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuessTheNumber/GuessTheNumber.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../GuessTheNumber/GuessTheNumber.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GuessTheNumber/src/Guessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GuessTheNumber/src/Guessing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tutorial/tut1/tut1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../Tutorial/tut1/tut1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WiFi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WiFi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WiFi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WiFi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ps2/out/production/ps2/Optimization.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ps2/out/production/ps2/Optimization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ps2/ps2/Optimization.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ps2/ps2/Optimization.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,17 +29,36 @@
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1WZ7nULgDni7j9dx1IyP98hOzFf" />
-  <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GuessTheNumber" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="1WZ7nULgDni7j9dx1IyP98hOzFf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.WiFiTest.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/qiujinhang/Desktop/CS2040S/CS2040S/WiFi",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
@@ -34,18 +66,6 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="JUnit.WiFiTest">
     <configuration name="WiFiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -85,6 +105,15 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.21-corretto-11.0.21-f644763e9732-e2c057a1" />
+        <option value="jdk-11.0.22-corretto-11.0.22-f644763e9732-6ddbcd97" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -95,7 +124,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579345429510</updated>
+      <workItem from="1706407404897" duration="2762000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
