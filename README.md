@@ -2,7 +2,7 @@
 
 AY23/24 Sem 2 CS2040S material
 
-My work staff in CS2040S
+My work stuff in CS2040S
 
 |Problem Set| Status | 
 |--|--------|
