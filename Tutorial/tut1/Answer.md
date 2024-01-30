@@ -133,3 +133,9 @@ Hence, Pseudocode
 ## Problem 6 Yet Another Application of Binary Search
 
 Given an array of n x and y-coordinates of an n-sided convex polygon in clockwiseorder, find a bounding box a round the polygon. Discuss possible naive solutions and possibly faster solutions. A convex polygon is a polygon where all interior angles are less than 180 degrees.
+
+Some idea but still confused:
+
+Find the nearest point and then update the base point as the nearest point and keep recursion
+
+But it will lead to a error when the nearest is not the right point i.e. they will forming diagonal XD
