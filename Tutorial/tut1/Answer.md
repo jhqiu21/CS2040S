@@ -62,8 +62,7 @@
 6. Can a variable in a parameter list for a method have the same name as a member (or static)
    variable in the class? If yes, how is the conflict of names resolved?
 
-   Yes.
-   But have no idea how to solve it
+   Yes. Can resolve this conflict by using `this` i.e. constructor
 
 ## Problem 2 Asymptotic Analysis
 
