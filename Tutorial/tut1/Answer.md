@@ -11,7 +11,7 @@
 
 2. Why does the main method come with a `static` modifier?
 
-   **Answer:** A static method belongs to the class rather than an instance of the class. Therefore, it can be called without creating an object.
+   **Answer:** A static method belongs to the class rather than an instance of the class. Therefore, it can be called without creating an object. java donot creat a Main type, so the Main method must be static or it will fail to run.
 3. Give an example class (or classes) that uses the modifier
    `private` incorrectly (i.e., the program will not compile as it is, but would compile if private was changed to public).
 
@@ -44,9 +44,11 @@
       by defining a set of methods that a class implementing
       the interface must implement.
    2. Give an example of using an interface.
+
+      In ps1 like `ILFShiftRegister`
    3. Can a method return an interface?
 
-      Yes
+      Yes, an interface is a type just like any other type. Since method are designed to return any type we want, they can return objects of an interface type.
 5. Refer to ``IntegerExamination.java``, which can be found in the same folder as this PDF.
    Without running the code, predict the output of the `main` method. Can you explain the
    outputs?
@@ -66,10 +68,11 @@
 
 ## Problem 2 Asymptotic Analysis
 
-- $f_1(n)= 7.2 + 34n^3 + 3524 = O(n^3)$
+- $f_1(n)= 7.2 + 34n^3 + 3524n = O(n^3)$
 - $f_2(n) = n^2 \log_{}n + 25n\log_{}^2n = O(n^2 \log_{}n) $
 - $f_3(n) = 2^{4\log_{}n} + 5n^5 = (2^{\log_{}n})^4 + 5n^5 = n^4 + 5n^5 = O(n^5)$
 - $f_4(n) = 2^{2n^2 + 4n + 7} = 2^{2n^2 + 4n} \times 2^7= O(2^{2n^2 + 4n})$
+  Note that $2^7$ can be ignored, but the other terms cannot be ignored.
 
 ## Problem 3 More Asymptotic Analysis
 
@@ -79,9 +82,9 @@ $g(n) = O(\log_{}n)$
 
 - $h_1(n) = f(n) + g(n) = O(n) + O(\log_{}n) = O(n)$
 - $h_2(n) = f(n) \times g(n) = O(n) \times O(\log_{}n) = O(n\log_{}n)$
-- $h_3(n) = \max (f(n), g(n)) = O(n)$
+- $h_3(n) = \max (f(n), g(n)) <= f(n) + g(n) = O(logn) + O(n) = O(n)$
 - $h_4(n) = f(g(n)) = O(\log_{}n) $
-- $h_5(n) = f(n)^{g(n)} = O(n^{\log_{}n}) $
+- depend on the oorder growth of $g(n)$, cannot determine the growth of $h_5(n)$
 
 ## Problem 4 Application of Binary Search
 
@@ -116,6 +119,8 @@ Thus, we can conduct a binary search in $[k_{\min}, k_{\max}]$, To make sure $k$
 $$
 \sum_{i=1}^{n}{\frac{pile[i]}{k}} \le h
 $$
+
+- Use upper bound!
 
 Hence, Pseudocode
 

@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0029eeb-ac9a-4fdc-b3d8-0f8803889465" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ps2/ps2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../ps2/ps2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ps2/ps2/LoadBalancing.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ps2/ps2/LoadBalancing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ps2/ps2/Optimization.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ps2/ps2/Optimization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ps3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ps3/.idea/libraries/Sorters.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ps3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ps3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ps3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ps3/ps3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +86,8 @@
       <workItem from="1705802287558" duration="10923000" />
       <workItem from="1705843956857" duration="13000" />
       <workItem from="1706109014069" duration="5000" />
+      <workItem from="1706667782385" duration="26000" />
+      <workItem from="1706667835224" duration="680000" />
     </task>
     <servers />
   </component>
