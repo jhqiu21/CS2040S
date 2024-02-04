@@ -3,10 +3,9 @@ import java.util.Random;
 public class SortingTester {
     public static boolean checkSort(ISort sorter, int size) {
         // TODO: implement this
-        if (size <= 0) {
-            System.out.println("Invalid array");
+        if (size < 0) {
             return false;
-        } else if (size == 1) {
+        } else if (size == 1 || size == 0) {
             System.out.println("Please input a larger size!");
             return true;
         }
@@ -28,10 +27,9 @@ public class SortingTester {
 
     public static boolean isStable(ISort sorter, int size) {
         // TODO: implement this
-        if (size <= 0) {
-            System.out.println("Invalid array");
+        if (size < 0) {
             return false;
-        } else if (size == 1) {
+        } else if (size == 1 || size == 0) {
             System.out.println("Please input a larger size!");
             return true;
         }
