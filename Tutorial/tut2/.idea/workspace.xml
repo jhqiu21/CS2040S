@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dc4d17a-3014-424a-b44b-1f15d18736f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/InsertSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../InversionCounting/.idea/libraries/junit4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../InversionCounting/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../InversionCounting/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../InversionCounting/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../InversionCounting/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../InversionCounting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../InversionCounting/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../InversionCounting/InversionCounting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../InversionCounting/InversionCounting.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../InversionCounting/src/InversionCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../InversionCounting/src/InversionCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SortOfSorting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SortOfSorting/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Answer.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Answer.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,26 +42,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.InsertSort.executor": "Run",
-    "Application.MergeSort.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/qiujinhang/Desktop/CS2040S/CS2040S/Tutorial/tut2/src/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.InsertSort.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MergeSort.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/qiujinhang/Desktop/CS2040S/CS2040S/Tutorial/tut2/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -77,6 +83,8 @@
       <workItem from="1706932895317" duration="45000" />
       <workItem from="1706932945078" duration="4300000" />
       <workItem from="1706944656458" duration="3264000" />
+      <workItem from="1707032870853" duration="7036000" />
+      <workItem from="1707222482305" duration="535000" />
     </task>
     <servers />
   </component>
