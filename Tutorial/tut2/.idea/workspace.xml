@@ -5,14 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dc4d17a-3014-424a-b44b-1f15d18736f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../InversionCounting/.idea/libraries/junit4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../InversionCounting/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../InversionCounting/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../InversionCounting/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../InversionCounting/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../InversionCounting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../InversionCounting/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../InversionCounting/InversionCounting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../InversionCounting/InversionCounting.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../InversionCounting/src/InversionCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../InversionCounting/src/InversionCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SortOfSorting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SortOfSorting/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Answer.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Answer.md" afterDir="false" />
     </list>
@@ -85,6 +77,8 @@
       <workItem from="1706944656458" duration="3264000" />
       <workItem from="1707032870853" duration="7036000" />
       <workItem from="1707222482305" duration="535000" />
+      <workItem from="1707270714245" duration="2907000" />
+      <workItem from="1707310027438" duration="2000" />
     </task>
     <servers />
   </component>
