@@ -30,7 +30,7 @@
 (a) Given an array A, decide if there are any duplicated elements in the array.
 
 - `Step 1` Sort the array, it will take $O(n\log{n})$ time
-- `Step 2` Traverse the array from 0 to n-2, find if `A[i] = A[i+1]` and return
+- `Step 2` Traverse the array from 0 to n-2, checking whether A[i] = A[i + 1], it will takes $O(n)$ time
 
 Hence, the time complexity of this algorithm is $T(n) = O(n\log{n}) + O(n) = O(n\log{n})$
 
@@ -93,4 +93,4 @@ Therefore, the time complexity is $T(n) = O(k\log{k}) + O(n\log{k}) = O(n\log{k}
 
 // TODO
 
-(d) 
+(d)
