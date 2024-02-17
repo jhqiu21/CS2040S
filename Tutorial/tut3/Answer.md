@@ -9,8 +9,15 @@
 - already sorted array
 - descend array
 - array has duplicated elements
+- large size array
 
 (b) Are any of the partitioning algorithms we have seen for QuickSort stable? Can you design a stable partitioning algorithm? Would it be efficient?
+
+Note that all swap algorithm is unstable
+
+- Set an additional array to keep the order of org array
+- once you swap two elements in the org array swap the elements in add array as well
+- finally check if there is element out of order
 
 (c) Consider a QuickSort implementation that uses the 3-way partitioning scheme (i.e. elements equal to the pivot are partitioned into their own segment).
 
@@ -30,7 +37,7 @@
 (a) Given an array A, decide if there are any duplicated elements in the array.
 
 - `Step 1` Sort the array, it will take $O(n\log{n})$ time
-- `Step 2` Traverse the array from 0 to n-2, checking whether A[i] = A[i + 1], it will takes $O(n)$ time
+- `Step 2` Traverse the array from `0` to `n-2`, checking whether `A[i] = A[i + 1]`, it will takes $O(n)$ time
 
 Hence, the time complexity of this algorithm is $T(n) = O(n\log{n}) + O(n) = O(n\log{n})$
 

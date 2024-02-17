@@ -1,3 +1,5 @@
+import com.sun.source.tree.Tree;
+
 /**
  * ScapeGoat Tree class
  *
@@ -43,6 +45,26 @@ public class SGTree {
      */
     public int countNodes(TreeNode node, Child child) {
         // TODO: Implement this
+        if (child == Child.LEFT) {
+            if (node.left == null) {
+                return 0;
+            } else {
+                int leftCount = countNodes(node.left, Child.LEFT);
+                int rightCount = countNodes(node.left, Child.RIGHT);
+                return 1 + leftCount + rightCount;
+            }
+        }
+
+        if (child == Child.RIGHT) {
+            if (node.right == null) {
+                return 0;
+            } else {
+                int leftCount = countNodes(node.right, Child.LEFT);
+                int rightCount = countNodes(node.right, Child.RIGHT);
+                return 1 + leftCount + rightCount;
+            }
+        }
+
         return 0;
     }
 
@@ -53,9 +75,42 @@ public class SGTree {
      * @param child the specified subtree
      * @return array of nodes
      */
+
     public TreeNode[] enumerateNodes(TreeNode node, Child child) {
         // TODO: Implement this
-        return new TreeNode[0];
+        int size = countNodes(node, child);
+        TreeNode[] inOrder = new TreeNode[size];
+
+        if (size == 0) {
+            return new TreeNode[] {};
+        }
+
+        if (child == Child.LEFT && node.left != null) {
+            return traverse(node.left, inOrder, 0);
+        }
+
+        if (child == Child.RIGHT && node.right != null) {
+            return traverse(node.right, inOrder, 0);
+        }
+
+        return null;
+    }
+
+    public TreeNode[] traverse(TreeNode node, TreeNode[] res, int index) {
+        // helper function to traverse the Tree in order
+        if (node.left != null) {
+            res = traverse(node.left, res, index);
+        }
+
+        int tap = countNodes(node, Child.LEFT);
+        index = index + tap;
+        res[index] = node;
+
+        if (node.right != null) {
+            res = traverse(node.right, res, index + 1);
+        }
+
+        return res;
     }
 
     /**
@@ -67,7 +122,20 @@ public class SGTree {
      */
     public TreeNode buildTree(TreeNode[] nodeList) {
         // TODO: Implement this
-        return new TreeNode(0);
+        return buildHelper(nodeList, 0, nodeList.length - 1);
+    }
+
+    public TreeNode buildHelper(TreeNode[] nodeList, int low, int high) {
+        // buildTree helper function
+        if (low <= high) {
+            int mid = (low + high) / 2;
+            TreeNode root = new TreeNode(nodeList[mid].key);
+            root.left = buildHelper(nodeList, low, mid - 1);
+            root.right = buildHelper(nodeList, mid + 1, high);
+            return root;
+        }
+
+        return null;
     }
 
     /**

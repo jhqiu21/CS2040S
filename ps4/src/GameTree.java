@@ -128,14 +128,49 @@ public class GameTree {
      */
     int findValue() {
         // TODO: Implement this
-        return 0;
+        if (root == null) {
+            return Integer.MIN_VALUE;
+        }
+        // the game start by player ONE
+        traverse(root, Player.ONE);
+        return root.value;
+    }
+
+    void traverse(TreeNode node, Player player) {
+        if (node.leaf) { return; }
+
+        if (player == Player.ONE) {
+            // if the player is Player One, we need to find the highest value
+            int value = Integer.MIN_VALUE;
+            for (int i = 0; i < node.numChildren; i++) {
+                traverse(node.children[i], other(player));
+                int curr = node.children[i].value;
+                if (curr > value) {
+                    value = curr;
+                }
+            }
+            node.value = value;
+        }
+
+        if (player == Player.TWO) {
+            // if the player is Player Two, we need to find the lowest value
+            int value = Integer.MAX_VALUE;
+            for (int i = 0; i < node.numChildren; i++) {
+                traverse(node.children[i], other(player));
+                int curr = node.children[i].value;
+                if (curr < value) {
+                    value = curr;
+                }
+            }
+            node.value = value;
+        }
     }
 
 
     // Simple main for testing purposes
     public static void main(String[] args) {
         GameTree tree = new GameTree();
-        tree.readTree("games/tictac_9_empty.txt");
+        tree.readTree("variants/notie.txt");
         System.out.println(tree.findValue());
     }
 
