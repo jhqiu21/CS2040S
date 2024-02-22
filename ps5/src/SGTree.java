@@ -1,3 +1,5 @@
+import java.util.zip.CheckedInputStream;
+
 /**
  * ScapeGoat Tree class
  * <p>
@@ -21,6 +23,7 @@ public class SGTree {
      */
     public static class TreeNode {
         int key;
+        double weight = 1;
         public TreeNode left = null;
         public TreeNode right = null;
 
@@ -41,6 +44,26 @@ public class SGTree {
      */
     public int countNodes(TreeNode node, Child child) {
         // TODO: Implement this
+        if (child == Child.LEFT) {
+            if (node.left == null) {
+                return 0;
+            } else {
+                int leftCount = countNodes(node.left, Child.LEFT);
+                int rightCount = countNodes(node.left, Child.RIGHT);
+                return 1 + leftCount + rightCount;
+            }
+        }
+
+        if (child == Child.RIGHT) {
+            if (node.right == null) {
+                return 0;
+            } else {
+                int leftCount = countNodes(node.right, Child.LEFT);
+                int rightCount = countNodes(node.right, Child.RIGHT);
+                return 1 + leftCount + rightCount;
+            }
+        }
+
         return 0;
     }
 
@@ -51,20 +74,56 @@ public class SGTree {
      * @param child the specified subtree
      * @return array of nodes
      */
-    TreeNode[] enumerateNodes(TreeNode node, Child child) {
+    public TreeNode[] enumerateNodes(TreeNode node, Child child) {
         // TODO: Implement this
-        return new TreeNode[0];
+        int size = countNodes(node, child);
+        TreeNode[] inOrder = new TreeNode[size];
+        if (size == 0) {
+            return new TreeNode[] {};
+        }
+        if (child == Child.LEFT && node.left != null) {
+            traverse(node.left, inOrder, 0);
+        }
+        if (child == Child.RIGHT && node.right != null) {
+            traverse(node.right, inOrder, 0);
+        }
+        return inOrder;
+    }
+    public int traverse(TreeNode node, TreeNode[] res, int index) {
+        // helper function to traverse the Tree in order
+        if (node == null) {
+            return index;
+        }
+        index = traverse(node.left, res, index);
+        res[index] = node;
+        index = traverse(node.right, res, index + 1);
+        return index ;
     }
 
+
     /**
-     * Builds a tree from the list of nodes Returns the node that is the new root of the subtree
+     * Builds a tree from the list of nodes
+     * Returns the node that is the new root of the subtree
      *
      * @param nodeList ordered array of nodes
      * @return the new root node
      */
-    TreeNode buildTree(TreeNode[] nodeList) {
+    public TreeNode buildTree(TreeNode[] nodeList) {
         // TODO: Implement this
-        return new TreeNode(0);
+        return buildHelper(nodeList, 0, nodeList.length - 1);
+    }
+
+    public TreeNode buildHelper(TreeNode[] nodeList, int low, int high) {
+        // buildTree helper function
+        if (low <= high) {
+            int mid = (low + high) / 2;
+            TreeNode root = new TreeNode(nodeList[mid].key);
+            root.left = buildHelper(nodeList, low, mid - 1);
+            root.right = buildHelper(nodeList, mid + 1, high);
+            return root;
+        }
+
+        return null;
     }
 
     /**
@@ -76,6 +135,18 @@ public class SGTree {
      */
     public boolean checkBalance(TreeNode node) {
         // TODO: Implement this
+        if (node == null) {
+            return true;
+        }
+        double leftWeight = (node.left == null) ? 0 : node.left.weight;
+        double rightWeight = (node.right == null) ? 0 : node.right.weight;
+        double nodeWeight = node.weight;
+        boolean leftCheck = (nodeWeight * 2.0 / 3.0) < leftWeight;
+        boolean rightCheck = (nodeWeight * 2.0 / 3.0) < rightWeight;
+
+        if (leftCheck || rightCheck) {
+            return false;
+        }
         return true;
     }
 
@@ -98,6 +169,36 @@ public class SGTree {
         } else if (child == Child.RIGHT) {
             node.right = newChild;
         }
+        fixWeights(node, child);
+    }
+
+    public void fixWeights(TreeNode u, Child child) {
+        if (u == null) {
+            return ;
+        } else if (child == Child.LEFT) {
+            fixWeightsAll(u.left);
+        } else if (child == Child.RIGHT) {
+            fixWeightsAll(u.right);
+        }
+    }
+
+    public void fixWeightsAll(TreeNode u) {
+        if (u.left == null && u.right == null) {
+            u.weight = 1;
+        }
+        if (u.left != null && u.right != null) {
+            fixWeightsAll(u.left);
+            fixWeightsAll(u.right);
+            u.weight = u.left.weight + u.right.weight + 1;
+        }
+        if (u.left != null) {
+            fixWeightsAll(u.left);
+            u.weight = u.left.weight + 1;
+        }
+        if (u.right != null) {
+            fixWeightsAll(u.right);
+            u.weight = u.right.weight + 1;
+        }
     }
 
     /**
@@ -114,6 +215,7 @@ public class SGTree {
         TreeNode node = root;
 
         while (true) {
+            node.weight++;
             if (key <= node.key) {
                 if (node.left == null) break;
                 node = node.left;
@@ -127,6 +229,34 @@ public class SGTree {
             node.left = new TreeNode(key);
         } else {
             node.right = new TreeNode(key);
+        }
+
+        shiftTree(key, root);
+
+    }
+
+    public void shiftTree(int key, TreeNode node) {
+
+        if (node == null) {
+            return ;
+        }
+
+        if (key <= node.key) {
+            if (checkBalance(node.left)) {
+                shiftTree(key, node.left);
+            }
+            else {
+                rebuild(node, Child.LEFT);
+            }
+        }
+
+        if (key > node.key) {
+            if (checkBalance(node.right)) {
+                shiftTree(key, node.right);
+            }
+            else {
+                rebuild(node, Child.RIGHT);
+            }
         }
     }
 

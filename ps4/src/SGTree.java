@@ -80,37 +80,34 @@ public class SGTree {
         // TODO: Implement this
         int size = countNodes(node, child);
         TreeNode[] inOrder = new TreeNode[size];
+        int index = 0;
 
         if (size == 0) {
             return new TreeNode[] {};
         }
 
         if (child == Child.LEFT && node.left != null) {
-            return traverse(node.left, inOrder, 0);
+            index =  traverse(node.left, inOrder, index);
         }
 
         if (child == Child.RIGHT && node.right != null) {
-            return traverse(node.right, inOrder, 0);
+            index =  traverse(node.right, inOrder, index);
         }
 
-        return null;
+        return inOrder;
     }
 
-    public TreeNode[] traverse(TreeNode node, TreeNode[] res, int index) {
+    public int traverse(TreeNode node, TreeNode[] res, int index) {
         // helper function to traverse the Tree in order
-        if (node.left != null) {
-            res = traverse(node.left, res, index);
+        if (node == null) {
+            return index;
         }
 
-        int tap = countNodes(node, Child.LEFT);
-        index = index + tap;
-        res[index] = node;
+        int tap = traverse(node.left, res, index);
+        res[tap] = node;
+        int end = traverse(node.right, res, tap + 1);
 
-        if (node.right != null) {
-            res = traverse(node.right, res, index + 1);
-        }
-
-        return res;
+        return index;
     }
 
     /**
