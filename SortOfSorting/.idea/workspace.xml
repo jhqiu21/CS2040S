@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e653d35d-64a0-474c-ade3-c503a89f5ee2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../InversionCounting/.idea/libraries/junit4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tutorial/tut2/src/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InversionCounting/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../InversionCounting/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InversionCounting/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../InversionCounting/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InversionCounting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../InversionCounting/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../InversionCounting/InversionCounting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../InversionCounting/InversionCounting.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InversionCounting/out/production/InversionCounting/InversionCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../InversionCounting/out/production/InversionCounting/InversionCounter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../InversionCounting/src/InversionCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InversionCounting/src/InversionCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tutorial/tut2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tutorial/tut2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tutorial/tut2/src/Answer.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Tutorial/tut2/src/Answer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SortOfSorting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SortOfSorting.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ps6/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ps6/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ps6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ps6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ps6/ps6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ps6/ps6.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ps6/src/MarkovModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ps6/src/MarkovModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +33,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="1WVuzDFxqckcjkhdW9jZRI8nVsa" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -41,6 +43,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.SorterTest.sortStringsValidityTest3.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -51,6 +54,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -122,6 +128,14 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.21-corretto-11.0.21-f644763e9732-e2c057a1" />
+        <option value="jdk-11.0.22-corretto-11.0.22-f644763e9732-6ddbcd97" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -134,6 +148,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579247343511</updated>
       <workItem from="1707218767819" duration="417000" />
+      <workItem from="1710923318397" duration="1389000" />
     </task>
     <servers />
   </component>

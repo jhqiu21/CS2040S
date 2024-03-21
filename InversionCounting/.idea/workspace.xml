@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a086584-f6e6-4dc8-b156-a42f0dc99966" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tutorial/tut2/src/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InversionCounting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/InversionCounting.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/InversionCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InversionCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tutorial/tut2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tutorial/tut2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tutorial/tut2/src/Answer.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Tutorial/tut2/src/Answer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ps6/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ps6/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ps6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ps6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ps6/ps6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ps6/ps6.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ps6/src/MarkovModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ps6/src/MarkovModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,34 +27,34 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="1WVuSjmlLPwTU5c842z2aIutqKV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.InversionCounterTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/qiujinhang/Desktop/CS2040S/CS2040S/InversionCounting",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.InversionCounterTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/qiujinhang/Desktop/CS2040S/CS2040S/InversionCounting&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="InversionCounterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InversionCounting" />
@@ -94,6 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579247084547</updated>
       <workItem from="1707186920527" duration="4153000" />
+      <workItem from="1710921872235" duration="1197000" />
     </task>
     <servers />
   </component>
