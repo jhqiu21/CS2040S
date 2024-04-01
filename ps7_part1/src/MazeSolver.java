@@ -79,10 +79,10 @@ public class MazeSolver implements IMazeSolver {
 
 		// set all visited flag to false
 		// before we begin our search
-		for (int i = 0; i < maze.getRows(); ++i) {
-			for (int j = 0; j < maze.getColumns(); ++j) {
+		for (int i = 0; i < this.maze.getRows(); ++i) {
+			for (int j = 0; j < this.maze.getColumns(); ++j) {
 				this.visit[i][j] = false;
-				maze.getRoom(i, j).onPath = false;
+				this.maze.getRoom(i, j).onPath = false;
 			}
 		}
 
@@ -138,6 +138,7 @@ public class MazeSolver implements IMazeSolver {
 			return null;
 		}
 
+		// update onPath status of the node on the path
 		for (; target != null; target = target.parent) {
 			this.maze.getRoom(target.x, target.y).onPath = true;
 		}
@@ -157,11 +158,11 @@ public class MazeSolver implements IMazeSolver {
 		// Do remember to remove any references to ImprovedMazePrinter before submitting
 		// your code!
 		try {
-			Maze maze = Maze.readMaze("maze-empty.txt");
+			Maze maze = Maze.readMaze("maze-sample.txt");
 			IMazeSolver solver = new MazeSolver();
 			solver.initialize(maze);
 
-			System.out.println(solver.pathSearch(0, 0, 0, 3));
+			System.out.println(solver.pathSearch(0, 0, 4, 1));
 			MazePrinter.printMaze(maze);
 
 			for (int i = 0; i <= 9; ++i) {
