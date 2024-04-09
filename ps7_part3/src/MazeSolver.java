@@ -40,12 +40,6 @@ public class MazeSolver implements IMazeSolver {
 			this.fearLevel = fearLevel;
 		}
 
-		/*
-		public void setFearLevel(int fearLevel) {
-			this.fearLevel = fearLevel;
-		}
-		 */
-
 		@Override
 		public int compare(Node n1, Node n2) {
 			if (n1.fearLevel < n2.fearLevel) {
@@ -58,6 +52,7 @@ public class MazeSolver implements IMazeSolver {
 
 			return 1;
 		}
+
 	}
 	public MazeSolver() {
 		// TODO: Initialize variables.
@@ -88,8 +83,8 @@ public class MazeSolver implements IMazeSolver {
 
 		// set all visited flag to false
 		// before we begin our search
-		for (int i = 0; i < this.maze.getRows(); ++i) {
-			for (int j = 0; j < this.maze.getColumns(); ++j) {
+		for (int i = 0; i < this.maze.getRows(); i++) {
+			for (int j = 0; j < this.maze.getColumns(); j++) {
 				this.visit[i][j] = false;
 				this.fearMatrix[i][j] = TRUE_WALL;
 			}
@@ -121,11 +116,9 @@ public class MazeSolver implements IMazeSolver {
 					// if next is not visit and not true wall, move on
 					if (!this.visit[nextX][nextY] && wallFare != TRUE_WALL) {
 						int nextFareLevel = this.fearMatrix[curr.x][curr.y] + wallFare;
-						// this.fearMatrix[nextX][nextY] = nextFareLevel;
 						// return the minimum possible fear level
 						this.fearMatrix[nextX][nextY] = Math.min(this.fearMatrix[nextX][nextY], nextFareLevel);
 						Node next = new Node(nextX, nextY, this.fearMatrix[nextX][nextY]);
-						// next.setFearLevel(this.fearMatrix[nextX][nextY]);
 						this.node.add(next);
 					}
 				}

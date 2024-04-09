@@ -169,7 +169,7 @@ public class MazeSolverWithPower implements IMazeSolverWithPower {
 
 
 	private boolean canByPass(int row, int col, int dir, int superpowers) {
-		// Copy from MazeSolverNaive
+		// Modified from canGo to detect if there is a chance to "jump"
 		if (row + DELTAS[dir][0] < 0 || row + DELTAS[dir][0] >= maze.getRows()) return false;
 		if (col + DELTAS[dir][1] < 0 || col + DELTAS[dir][1] >= maze.getColumns()) return false;
 
